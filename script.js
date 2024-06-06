@@ -9,11 +9,11 @@ const superHeroes = {
 const averageAge = (superHeroes) => {
     let totalAge = 0;
     let i = 0;
-    for (key in superHeroes) {
+    for (let key in superHeroes) {
         totalAge += superHeroes[key];
         i++;
     }
-    let avgAge = totalAge/i;
+    let avgAge = totalAge / i;
     return avgAge;
 };
 
